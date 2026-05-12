@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 
 <meta charset="UTF-8">
@@ -14,7 +15,47 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+<style>
+
+.gallery-side{
+position:relative;
+}
+
+.arrow{
+position:absolute;
+
+top:50%;
+
+transform:translateY(-50%);
+
+width:50px;
+height:50px;
+
+border:none;
+
+background:rgba(0,0,0,0.6);
+
+color:white;
+
+font-size:30px;
+
+cursor:pointer;
+
+z-index:10;
+}
+
+.left{
+left:10px;
+}
+
+.right{
+right:10px;
+}
+
+</style>
+
 </head>
+
 <body>
 
 <!-- HEADER -->
@@ -42,10 +83,18 @@
 
 <div class="gallery-side">
 
+<button class="arrow left" onclick="prevImage()">
+❮
+</button>
+
 <img
 src="assets/motos/sahara/1.jpeg"
 class="main-image"
 id="mainImage">
+
+<button class="arrow right" onclick="nextImage()">
+❯
+</button>
 
 <div class="thumbs">
 
@@ -109,33 +158,9 @@ e pronta para rodar.
 
 <div class="detail-box">
 
-<span>Combustível</span>
-
-<h3>Flex</h3>
-
-</div>
-
-<div class="detail-box">
-
-<span>Câmbio</span>
-
-<h3>Manual</h3>
-
-</div>
-
-<div class="detail-box">
-
 <span>Cor</span>
 
-<h3>Beje</h3>
-
-</div>
-
-<div class="detail-box">
-
-<span>Motor</span>
-
-<h3>300cc</h3>
+<h3>Bege</h3>
 
 </div>
 
@@ -181,6 +206,53 @@ Motor e câmbio com garantia.
 </div>
 
 </section>
+
+<script>
+
+const images = [
+
+"assets/motos/sahara/1.jpeg",
+"assets/motos/sahara/2.jpeg",
+"assets/motos/sahara/3.jpeg"
+
+];
+
+let current = 0;
+
+const mainImage =
+document.getElementById("mainImage");
+
+function nextImage(){
+
+current++;
+
+if(current >= images.length){
+current = 0;
+}
+
+mainImage.src = images[current];
+
+}
+
+function prevImage(){
+
+current--;
+
+if(current < 0){
+current = images.length - 1;
+}
+
+mainImage.src = images[current];
+
+}
+
+function changeImage(img){
+
+mainImage.src = img.src;
+
+}
+
+</script>
 
 <script src="script.js"></script>
 
