@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Estoque | Tavares Motors</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+background:#050505;
+color:white;
+font-family:'Manrope',sans-serif;
+}
+
+/* TEXTOS BRANCOS */
+
+h1,h2,h3,h4,p,span,small,a{
+color:white;
+}
+
+.card-content h4{
+color:#C89B3C;
+}
+
+.card-content small{
+color:#C89B3C;
+}
+
+.filtros input,
+.filtros select{
+color:white;
+background:#090909;
+}
+
+.filtros input::placeholder{
+color:white;
+}
+
+.filtros option{
+background:#090909;
+color:white;
+}
+
+</style>
+
+</head>
+<body>
+
+<header class="header">
+
+<img src="assets/logo.png" class="logo">
+
+<nav>
+
+<a href="index.html">INÍCIO</a>
+<a href="estoque.html">ESTOQUE</a>
+<a href="financiamento.html">FINANCIAMENTO</a>
+<a href="contato.html">CONTATO</a>
+
+</nav>
+
+</header>
+
+<section class="estoque-hero">
+
+<div class="overlay"></div>
+
+<div class="estoque-hero-content">
+
+<span>TAVARES MOTORS</span>
+
+<h1>
+Veículos Disponíveis
+</h1>
+
+<p>
+Confira as motos disponíveis na loja.
+</p>
+
+</div>
+
+</section>
+
+<section class="filtros">
+
+<input
+type="text"
+id="searchInput"
+placeholder="Pesquisar modelos...">
+
+<select id="brandFilter">
+
+<option value="all">
+Todas as Marcas
+</option>
+
+<option value="Honda">
+Honda
+</option>
+
+<option value="Yamaha">
+Yamaha
+</option>
+
+</select>
+
+</section>
+
+<section class="quantidade">
+
+<p>
+10 veículos encontrados
+</p>
+
+</section>
+
+<section class="cards">
+
+<!-- SAHARA -->
+
+<a href="sahara.html" class="card" data-brand="Honda">
+
+<img src="assets/motos/sahara/1.jpeg">
+
+<div class="card-content">
+
+<small>HONDA</small>
+
+<h3>Sahara 300</h3>
+
+<div class="infos">
+
+<span>2024</span>
+<span>28.400 KM</span>
+
+</div>
+
+<h4>R$ 35.900</h4>
+
+</div>
+
+</a>
+
+<!-- BROS -->
+
+<a href="bros160.html" class="card" data-brand="Honda">
+
+<img src="assets/motos/Bros 160/1.jpeg">
+
+<div class="card-content">
+
+<small>HONDA</small>
+
+<h3>Bros 160</h3>
+
+<div class="infos">
+
+<span>2021</span>
+<span>49.700 KM</span>
+
+</div>
+
+<h4>R$ 19.499</h4>
+
+</div>
+
+</a>
+
+<!-- XRE -->
+
+<a href="xre300.html" class="card" data-brand="Honda">
+
+<img src="assets/motos/XRE 300/1.jpeg">
+
+<div class="card-content">
+
+<small>HONDA</small>
+
+<h3>XRE 300</h3>
+
+<div class="infos">
+
+<span>2021</span>
+<span>75.000 KM</span>
+
+</div>
+
+<h4>R$ 30.900</h4>
+
+</div>
+
+</a>
+
+<!-- XTZ -->
+
+<a href="xtz250.html" class="card" data-brand="Yamaha">
+
+<img src="assets/motos/XTZ 250/1.jpeg">
+
+<div class="card-content">
+
+<small>YAMAHA</small>
+
+<h3>XTZ 250</h3>
+
+<div class="infos">
+
+<span>2019</span>
+<span>64.200 KM</span>
+
+</div>
+
+<h4>R$ 20.900</h4>
+
+</div>
+
+</a>
+
+<!-- ADV -->
+
+<a href="adv.html" class="card" data-brand="Honda">
+
+<img src="assets/motos/ADV/1.jpeg">
+
+<div class="card-content">
+
+<small>HONDA</small>
+
+<h3>ADV</h3>
+
+<div class="infos">
+
+<span>2023</span>
+<span>13.300 KM</span>
+
+</div>
+
+<h4>R$ 23.900</h4>
+
+</div>
+
+</a>
+
+<!-- ADV BRANCA -->
+
+<a href="advbranca.html" class="card" data-brand="Honda">
+
+<img src="assets/motos/ADVbranca/1.jpeg">
+
+<div class="card-content">
+
+<small>HONDA</small>
+
+<h3>ADV Branca</h3>
+
+<div class="infos">
+
+<span>2022</span>
+<span>29.800 KM</span>
+
+</div>
+
+<h4>R$ 22.500</h4>
+
+</div>
+
+</a>
+
+<!-- START -->
+
+<a href="start160.html" class="card" data-brand="Honda">
+
+<img src="assets/motos/START 160/1.jpeg">
+
+<div class="card-content">
+
+<small>HONDA</small>
+
+<h3>Start 160</h3>
+
+<div class="infos">
+
+<span>2025</span>
+<span>3.000 KM</span>
+
+</div>
+
+<h4>R$ 19.499</h4>
+
+</div>
+
+</a>
+
+<!-- FAZER -->
+
+<a href="fazer150.html" class="card" data-brand="Yamaha">
+
+<img src="assets/motos/FAZER 150/1.jpeg">
+
+<div class="card-content">
+
+<small>YAMAHA</small>
+
+<h3>Fazer 150</h3>
+
+<div class="infos">
+
+<span>2025</span>
+<span>41.000 KM</span>
+
+</div>
+
+<h4>R$ 19.900</h4>
+
+</div>
+
+</a>
+
+<!-- PCX -->
+
+<a href="pcx.html" class="card" data-brand="Honda">
+
+<img src="assets/motos/PCX/1.jpeg">
+
+<div class="card-content">
+
+<small>HONDA</small>
+
+<h3>PCX</h3>
+
+<div class="infos">
+
+<span>2024</span>
+<span>10.000 KM</span>
+
+</div>
+
+<h4>R$ 21.900</h4>
+
+</div>
+
+</a>
+
+<!-- BIZ -->
+
+<a href="biz125.html" class="card" data-brand="Honda">
+
+<img src="assets/motos/BIZ 125/1.jpeg">
+
+<div class="card-content">
+
+<small>HONDA</small>
+
+<h3>Biz 125</h3>
+
+<div class="infos">
+
+<span>2023</span>
+<span>12.700 KM</span>
+
+</div>
+
+<h4>R$ 18.499</h4>
+
+</div>
+
+</a>
+
+<!-- 500X -->
+
+<a href="500x.html" class="card" data-brand="Honda">
+
+<img src="assets/motos/500x/1.jpeg">
+
+<div class="card-content">
+
+<small>HONDA</small>
+
+<h3>CB 500X</h3>
+
+<div class="infos">
+
+<span>2024</span>
+<span>6.700 KM</span>
+
+</div>
+
+<h4>R$ 48.900</h4>
+
+</div>
+
+</a>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

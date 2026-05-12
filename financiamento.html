@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+Financiamento | Tavares Motors
+</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+background:#050505;
+font-family:Arial;
+color:white;
+margin:0;
+}
+
+/* HEADER */
+
+.header{
+width:100%;
+height:90px;
+
+background:#050505;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+padding:0 7%;
+
+box-sizing:border-box;
+
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.logo{
+height:55px;
+}
+
+nav{
+display:flex;
+gap:40px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:700;
+font-size:14px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#C89B3C;
+}
+
+/* HERO */
+
+.financiamento-hero{
+height:40vh;
+
+background:url('assets/loja.jpg') center/cover;
+
+display:flex;
+align-items:center;
+
+padding:0 7%;
+
+position:relative;
+}
+
+.overlay{
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.7);
+}
+
+.financiamento-content{
+position:relative;
+z-index:2;
+}
+
+.financiamento-content span{
+color:#C89B3C;
+letter-spacing:5px;
+font-size:14px;
+}
+
+.financiamento-content h1{
+font-size:70px;
+margin-top:20px;
+}
+
+/* FORM */
+
+.form-section{
+padding:100px 7%;
+
+display:flex;
+justify-content:center;
+}
+
+.form-box{
+width:100%;
+max-width:700px;
+
+background:#090909;
+
+padding:50px;
+
+border:1px solid rgba(255,255,255,0.1);
+}
+
+.form-box h2{
+font-size:40px;
+
+margin-bottom:40px;
+}
+
+.form-group{
+margin-bottom:25px;
+}
+
+.form-group label{
+display:block;
+
+margin-bottom:10px;
+
+font-weight:bold;
+}
+
+.form-group input,
+.form-group select{
+width:100%;
+
+height:60px;
+
+background:#050505;
+
+border:1px solid rgba(255,255,255,0.1);
+
+padding:0 20px;
+
+color:white;
+
+font-size:16px;
+
+outline:none;
+
+box-sizing:border-box;
+}
+
+.form-group select option{
+background:#050505;
+color:white;
+}
+
+.submit-btn{
+width:100%;
+
+height:65px;
+
+border:none;
+
+background:#C89B3C;
+
+font-weight:800;
+
+font-size:15px;
+
+cursor:pointer;
+
+margin-top:20px;
+
+transition:0.3s;
+}
+
+.submit-btn:hover{
+opacity:0.8;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+.header{
+flex-direction:column;
+height:auto;
+padding:20px;
+gap:20px;
+}
+
+nav{
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.financiamento-content h1{
+font-size:45px;
+}
+
+.form-box{
+padding:30px;
+}
+
+.form-box h2{
+font-size:30px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+<img src="assets/logo.png" class="logo">
+
+<nav>
+
+<a href="index.html">
+INÍCIO
+</a>
+
+<a href="estoque.html">
+ESTOQUE
+</a>
+
+<a href="financiamento.html">
+FINANCIAMENTO
+</a>
+
+<a href="contato.html">
+CONTATO
+</a>
+
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="financiamento-hero">
+
+<div class="overlay"></div>
+
+<div class="financiamento-content">
+
+<span>
+TAVARES MOTORS
+</span>
+
+<h1>
+Financiamento
+</h1>
+
+</div>
+
+</section>
+
+<!-- FORM -->
+
+<section class="form-section">
+
+<div class="form-box">
+
+<h2>
+Solicite Seu Financiamento
+</h2>
+
+<form id="financeForm">
+
+<!-- NOME -->
+
+<div class="form-group">
+
+<label>
+Nome Completo
+</label>
+
+<input
+type="text"
+name="nome"
+required>
+
+</div>
+
+<!-- EMAIL -->
+
+<div class="form-group">
+
+<label>
+E-mail
+</label>
+
+<input
+type="email"
+name="email"
+required>
+
+</div>
+
+<!-- TELEFONE -->
+
+<div class="form-group">
+
+<label>
+WhatsApp
+</label>
+
+<input
+type="text"
+name="telefone"
+required>
+
+</div>
+
+<!-- MOTO -->
+
+<div class="form-group">
+
+<label>
+Moto Desejada
+</label>
+
+<select
+name="moto"
+required>
+
+<option value="">
+Selecione uma moto
+</option>
+
+<option>Sahara 300</option>
+<option>Bros 160</option>
+<option>XRE 300</option>
+<option>XTZ 250</option>
+<option>ADV</option>
+<option>ADV Branca</option>
+<option>Start 160</option>
+<option>Fazer 150</option>
+<option>PCX</option>
+<option>Biz 125</option>
+<option>CB 500X</option>
+
+</select>
+
+</div>
+
+<button
+type="submit"
+class="submit-btn">
+
+SOLICITAR FINANCIAMENTO
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- SCRIPT -->
+
+<script>
+
+const form = document.getElementById("financeForm");
+
+form.addEventListener("submit", async function(e){
+
+e.preventDefault();
+
+const data = {
+
+nome: this.nome.value,
+email: this.email.value,
+telefone: this.telefone.value,
+moto: this.moto.value
+
+};
+
+try{
+
+const response = await fetch(
+"http://localhost:3000/financiamento",
+{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body: JSON.stringify(data)
+
+}
+
+);
+
+if(response.ok){
+
+document.querySelector(".form-box").innerHTML = `
+
+<div style="
+text-align:center;
+padding:60px 20px;
+">
+
+<h2 style="
+font-size:60px;
+color:#C89B3C;
+margin-bottom:20px;
+">
+✓
+</h2>
+
+<h2 style="
+font-size:35px;
+margin-bottom:15px;
+">
+Financiamento enviado!
+</h2>
+
+<p style="
+color:#bdbdbd;
+font-size:18px;
+line-height:32px;
+">
+Recebemos sua solicitação.<br>
+Nossa equipe entrará em contato em breve.
+</p>
+
+</div>
+
+`;
+
+}else{
+
+alert("Erro ao enviar");
+
+}
+
+}catch(error){
+
+alert("Servidor offline ou erro no envio");
+
+console.log(error);
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
