@@ -709,3 +709,155 @@ flex-direction:column;
 }
 
 }
+
+/* RESPONSIVO CELULAR */
+
+@media(max-width:768px){
+
+/* HEADER */
+
+.header{
+flex-direction:column;
+padding:20px;
+gap:20px;
+}
+
+.header nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.header nav a{
+font-size:14px;
+}
+
+/* HERO */
+
+.hero{
+height:auto;
+padding:140px 7% 80px;
+}
+
+.hero-content h1{
+font-size:60px;
+line-height:1;
+}
+
+.hero-content p{
+font-size:18px;
+line-height:1.6;
+}
+
+.hero-buttons{
+flex-direction:column;
+}
+
+.gold-btn,
+.outline-btn{
+width:100%;
+justify-content:center;
+}
+
+/* HERO ESTOQUE */
+
+.estoque-hero{
+height:auto;
+padding:140px 7% 80px;
+}
+
+.estoque-hero-content h1{
+font-size:60px;
+line-height:1;
+}
+
+/* FILTROS */
+
+.filtros{
+flex-direction:column;
+}
+
+.filtros input,
+.filtros select{
+width:100%;
+}
+
+/* CARDS */
+
+.cards{
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+padding:40px 5%;
+}
+
+.card img{
+height:180px;
+}
+
+.card-content h3{
+font-size:24px;
+}
+
+.card-content h4{
+font-size:28px;
+}
+
+/* DETALHE MOTO */
+
+.moto-detalhe{
+flex-direction:column;
+padding:50px 5%;
+}
+
+.moto-gallery,
+.moto-info{
+width:100%;
+}
+
+/* FINANCIAMENTO */
+
+.financiamento-content h1{
+font-size:55px;
+}
+
+.form-box{
+padding:30px;
+}
+
+.form-box h2{
+font-size:50px;
+}
+
+/* CONTATO */
+
+.contact-content h1{
+font-size:55px;
+}
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+
+/* BENEFICIOS */
+
+.beneficios{
+grid-template-columns:1fr;
+}
+
+/* LOCALIZAÇÃO */
+
+.location{
+flex-direction:column;
+}
+
+.location-info,
+.location-map{
+width:100%;
+}
+
+.location-map iframe{
+height:300px;
+}
+
+}
